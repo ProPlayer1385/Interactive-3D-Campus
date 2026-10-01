@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#102f2b">
+  <title>Interactive Sustainable Campus 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading"><div class="brand-mark">S</div><div class="loader"></div><h2>Loading Sustainable Campus</h2><p>Interactive sustainable campus experience</p></div>
+  <div id="app"></div>
+  <div class="vignette"></div>
+  <header>
+    <div class="brand"><div class="eyebrow">INTERACTIVE 3D CAMPUS EXPERIENCE</div><h1>Sustainable <span>Campus 3D</span></h1></div>
+    <div class="header-actions"><button id="tourBtn">▶ <span>Guided Tour</span></button><button id="resetBtn">⌂ <span>Reset View</span></button></div>
+  </header>
+  <aside id="legend">
+    <div class="panel-kicker">EXPLORE</div><h3>Sustainability Systems</h3><p class="panel-intro">Select a system to fly across the campus.</p>
+    <button data-focus="solar"><i>☀</i><span><b>Renewable Energy</b><small>Solar & clean power</small></span><em>→</em></button>
+    <button data-focus="water"><i>💧</i><span><b>Rainwater Harvesting</b><small>Capture, filter & reuse</small></span><em>→</em></button>
+    <button data-focus="green"><i>🌿</i><span><b>Green Buildings</b><small>Passive & living design</small></span><em>→</em></button>
+    <button data-focus="waste"><i>♻</i><span><b>Waste Management</b><small>Segregate & compost</small></span><em>→</em></button>
+    <button data-focus="bio"><i>🦋</i><span><b>Biodiversity</b><small>Native habitat & pond</small></span><em>→</em></button>
+    <button data-focus="transport"><i>⚡</i><span><b>Clean Transport</b><small>EV shuttle & cycling</small></span><em>→</em></button>
+  </aside>
+  <section id="info" class="hidden"><button id="closeInfo">×</button><div id="infoIcon"></div><div class="tag" id="infoTag"></div><h2 id="infoTitle"></h2><p id="infoText"></p><div id="infoStats"></div></section>
+  <div id="hint"><span>↔ Drag to orbit</span><span>↕ Scroll to zoom</span><span>● Select glowing markers</span></div>
+  <div id="tour"><div class="tour-progress"><span id="tourCount">1 / 6</span><div><i id="tourBar"></i></div></div><div class="tag">GUIDED CAMPUS TOUR</div><h2 id="tourTitle"></h2><p id="tourText"></p><div><button id="tourExit">Exit tour</button><button id="tourNext">Next stop →</button></div></div>
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}</script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
